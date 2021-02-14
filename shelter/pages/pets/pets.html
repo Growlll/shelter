@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="pets.css">
+  <title>Pets</title>
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__container">
+    <a class="logo" id="logo-header" href="../main/main.html">
+      <h1 class="logo__title">Cozy House</h1>
+      <span class="logo__subtitle">Shelter for pets in Boston</span>
+    </a>
+    <button class="mobile-menu" aria-label="Menu">
+      <span class="mobile-menu__line"></span>
+    </button>
+    <div class="header__inner" id="header-inner">
+      <a class=" logo logo-mobile logo--mobile-menu" id="logo-mobile-menu" href="../main/main.html">
+        <h1 class="logo__title">Cozy House</h1>
+        <span class="logo__subtitle">Shelter for pets in Boston</span>
+      </a>
+      <nav class="menu menu--mobile" id="menu-mobile">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link ss" href="../main/main.html">About the shelter</a>
+          </li>
+          <li class="menu__item menu__item--active">
+            <a class="menu__link" href="../pets/pets.html">Our pets</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link inactive" href="#">Help the shelter</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link inactive" href="#">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<section class="friends">
+  <div class="container">
+    <h2 class="friends__title">Our friends who <br> are looking for a house</h2>
+
+    <div class="pets" id="pets"></div>
+
+      <div class="pagination">
+        <button class="pagination__btn pagination__start" disabled></button>
+        <button class="pagination__btn pagination__prev" disabled></button>
+        <button class="pagination__btn pagination__current pagination__active"></button>
+        <button class="pagination__btn pagination__next"></button>
+        <button class="pagination__btn pagination__end"></button>
+      </div>
+
+    <div class="popup" id="popup"></div>
+
+    <template id="pet">
+      <div class="card" id="card">
+        <button class="card__close" id="card-close"></button>
+
+        <div class="card__img" id="card-img">
+          <img id="img" src="../../assets/imgs/pets-jennifer.png" alt="image Jennifer">
+        </div>
+
+        <div class="card__infos">
+          <h2 class="card__name" id="name"></h2>
+          <h3 class="card__info-pet">
+            <span class="card__type" id="type"></span> - <span id="breed"></span>
+          </h3>
+          <p class="card__description" id="description">
+          </p>
+
+          <ul class="card__list-info">
+            <li class="card__item">
+              Age: <span class="card__item-info" id="age"></span></li>
+            <li class="card__item">
+              Inoculations: <span class="card__item-info" id="inoculations"></span>
+            </li>
+            <li class="card__item">
+              Diseases: <span class="card__item-info" id="diseases"></span>
+            </li>
+            <li class="card__item">
+              Parasites: <span class="card__item-info" id="parasites"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </template>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__wrap">
+      <h2 class="footer__title">For questions<br class="tablet-br"> and suggestions</h2>
+      <a class="footer__info" href="mailto:email@shelter.com">
+        <span class="footer__icon footer__icon--mail"></span>
+        <span class="footer__text">email@shelter.com</span>
+      </a>
+      <a class="footer__info" href="tel:+136745677554">
+        <span class="footer__icon footer__icon--tel"></span>
+        <span class="footer__text">+13 674 567 75 54</span>
+      </a>
+    </div>
+    <div class="footer__wrap">
+      <h2 class="footer__title">We are waiting<br class="tablet-br"> for<br class="mobile-br"> your visit</h2>
+      <a class="footer__info" href="https://www.google.com.ua/maps/place/1+Central+St,+Boston,+MA+02109,+%D0%A1%D0%A8%D0%90/@42.3585558,-71.056915,17z/data=!3m1!4b1!4m5!3m4!1s0x89e370868bc2ce7b:0x82fa7db94f5fea9e!8m2!3d42.3585519!4d-71.0547263" target="_blank">
+        <span class="footer__icon footer__icon--location"></span>
+        <span class="footer__text">1 Central Street, Boston (entrance from the store)</span>
+      </a>
+      <a class="footer__info" href="https://www.google.com.ua/maps/search/18+South+Park,+London/@51.5287352,-0.3817853,10z/data=!3m1!4b1!4m5!2m4!5m3!5m2!4m1!1i2" target="_blank">
+        <span class="footer__icon footer__icon--location"></span>
+        <span class="footer__text">18 South Park, London </span>
+      </a>
+    </div>
+    <div class="footer__wrap">
+      <div class="footer__img">
+        <img src="../../assets/imgs/footer-puppy.png" alt="image puppy">
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="pets.js"></script>
+</body>
+</html>
