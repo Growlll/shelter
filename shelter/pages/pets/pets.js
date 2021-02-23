@@ -64,19 +64,6 @@ request.onload = () => {
   fullPetsList = sort863(fullPetsList)
 
   createPets(fullPetsList)
-
-  // for (let i = 0; i < (fullPetsList.length / 6); i++) {
-  //   const stepList = fullPetsList.slice((i * 6), (i * 6) + 6)
-  //
-  //   for (let j = 0; j < 6; j++) {
-  //     stepList.forEach((item, ind) => {
-  //       if (item.name === stepList[j].name && ind !== j) {
-  //         document.querySelector('#pets').children[(i* 6) + j].style.border = "5px solid red"
-  //       }
-  //     })
-  //   }
-  // }
-
 }
 
 
